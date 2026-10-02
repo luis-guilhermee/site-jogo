@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #7c1010;
+}
+.logo {
+    margin-left: 20px;
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+.menu {
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #7c1010;
+}
+.menu-list {
+    margin-right: 520px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    background-color: #7c1010;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu-list a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu-list li span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #7c1010;
+}
+.menu-list li span:hover {
+    background-color: #610101;
+    color: #fff;
+    transition: 1s;
+}
+.cont {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 65vh;
+    width: 99vw;
+    background-color: #1d1d1d;
+}
+.carousel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 400px;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    padding-left: 49px;
+    justify-content: start;
+}
+.carousel-item.active {
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.carousel-item {
+    position: relative;
+}
+.btn-btn-primary {
+    position: absolute;
+    left: 8%;
+    top: 78%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+    background-color: #7c1010;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-btn-primary:hover {
+    height: 50px;
+    width: 130px;
+    font-size: 1.1rem;
+    background-color: #610101;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.venda {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 65vh;
+    width: 99vw;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.venda h1 {
+    margin-left: 10vw;
+    font-size: 2rem;
+}
+.filmes {
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    align-items: start;
+    justify-content: space-between;
+    width: 1200px;
+    height: 30vw;
+}
+.cards-filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    height: 300px;
+    width: 170px;
+    background-color: #2d2d2d;
+}
+.cards-filmes-img-1,
+.cards-filmes-img-2,
+.cards-filmes-img-3,
+.cards-filmes-img-4,
+.cards-filmes-img-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 12px;
+    width: 130px;
+    height: 180px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: 100% 100%;
+
+    transition: background-size 0.5s ease;
+}
+
+
+/* IMAGENS */
+
+.cards-filmes-img-1 {
+    background-image: url('../img/deadpool.png');
+}
+
+.cards-filmes-img-2 {
+    background-image: url('../img/vertity.png');
+}
+
+.cards-filmes-img-3 {
+    background-image: url('../img/ultimato.png');
+}
+
+.cards-filmes-img-4 {
+    background-image: url('../img/inception.png');
+}
+
+.cards-filmes-img-5 {
+    background-image: url('../img/top_gun.png');
+}
+
+
+/* CAMADA ESCURA */
+
+.cards-filmes-img-1::before,
+.cards-filmes-img-2::before,
+.cards-filmes-img-3::before,
+.cards-filmes-img-4::before,
+.cards-filmes-img-5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: #1d1d1daa;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+/* LINKS */
+
+.cards-filmes-img-1 p,
+.cards-filmes-img-2 p,
+.cards-filmes-img-3 p,
+.cards-filmes-img-4 p,
+.cards-filmes-img-5 p {
+    position: relative;
+    z-index: 2;
+
+    margin: 5px 0;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+}
+
+
+/* TEXTO DOS LINKS */
+
+.cards-filmes-img-1 a,
+.cards-filmes-img-2 a,
+.cards-filmes-img-3 a,
+.cards-filmes-img-4 a,
+.cards-filmes-img-5 a {
+    text-decoration: none;
+    color: #fff;
+
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+
+/* ZOOM */
+
+.cards-filmes-img-1:hover,
+.cards-filmes-img-2:hover,
+.cards-filmes-img-3:hover,
+.cards-filmes-img-4:hover,
+.cards-filmes-img-5:hover {
+    background-size: 110% 110%;
+}
+
+
+/* ESCURECER */
+
+.cards-filmes-img-1:hover::before,
+.cards-filmes-img-2:hover::before,
+.cards-filmes-img-3:hover::before,
+.cards-filmes-img-4:hover::before,
+.cards-filmes-img-5:hover::before {
+    opacity: 1;
+}
+
+
+/* MOSTRAR LINKS */
+
+.cards-filmes-img-1:hover p,
+.cards-filmes-img-2:hover p,
+.cards-filmes-img-3:hover p,
+.cards-filmes-img-4:hover p,
+.cards-filmes-img-5:hover p {
+    opacity: 1;
+}
+.nome-filme {
+    padding-inline: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    height: 50px;
+    width: 150px;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 1rem;
+}
+.btn-filmes {   
+    align-self: flex-start;
+    background-color: #7c1010;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    margin-left: 20px;
+    font-size: small;
+}
+.btn-filmes:hover {
+    background-color: #610101;
+    font-size: 1rem;
+    transition: 0.3s;
+    height: 37px;
+    width: 87px;
+}
