@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Escolha de Assentos</title>
+
+    <link rel="stylesheet" href="./css/cadeira.css" />
+  </head>
+
+  <body>
+    <nav class="menu">
+      <img src="img/cinePlus.png" class="logo" alt="Logo do site" />
+      <ul class="menu-list">
+        <li>
+          <button class="btn-nav">
+            <a href="index.html"><span>Início</span></a>
+          </button>
+        </li>
+        <li>
+          <button class="btn-nav">
+            <a href="index.html#cartaz"><span>Filmes</span></a>
+          </button>
+        </li>
+        <li>
+          <button class="btn-nav">
+            <a href="index.html#curta"><span>Promoções</span></a>
+          </button>
+        </li>
+        <li>
+          <button class="btn-nav">
+            <a href="#"><span>Minha Conta</span></a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="corpo">
+      <section class="selecao-assentos">
+        <!-- NOME DO FILME -->
+        <h1 id="nomeFilme"></h1>
+
+        <h2>Escolha seus assentos</h2>
+
+        <!-- TELA DO CINEMA -->
+
+        <div class="tela">TELA</div>
+
+        <!-- SALA -->
+
+        <!--
+            As 32 cadeiras serão criadas
+            automaticamente pelo JavaScript
+        -->
+
+        <div id="sala" class="sala"></div>
+
+        <!-- LEGENDA -->
+
+        <div class="legenda">
+          <div>
+            <span class="cor disponivel"></span>
+            <p>Disponível</p>
+          </div>
+
+          <div>
+            <span class="cor selecionado"></span>
+            <p>Selecionado</p>
+          </div>
+
+          <div>
+            <span class="cor ocupado"></span>
+            <p>Ocupado</p>
+          </div>
+        </div>
+
+        <!-- RESUMO DA COMPRA -->
+
+        <div class="resumo">
+          <p>
+            Assentos:
+            <strong id="assentosEscolhidos"> Nenhum </strong>
+          </p>
+
+          <p>
+            Total:
+            <strong> R$ <span id="total">0,00</span> </strong>
+          </p>
+
+          <!-- BOTÃO -->
+
+          <button id="finalizar">Finalizar compra</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

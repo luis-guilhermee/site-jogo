@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.corpo {
+    height: 120dvh;
+    padding-top: 1px;
+    background-color: #1d1d1d;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: #7c1010;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #7c1010;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    height: 50px;
+    width: auto;
+}
+
+.menu-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    background-color: #7c1010;
+}
+.menu-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.menu-list li span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #7c1010;
+}
+.menu-list li span:hover {
+    background-color: #610101;
+    color: #fff;
+    transition: 1s;
+}
+.btn-nav {
+    border: none;
+    background-color: #7c1010;
+}
+.btn-nav:hover {
+    cursor: pointer;
+    background-color: #610101;
+    transition: 0.5sec;
+}
+.selecao-assentos {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.selecao-assentos h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.selecao-assentos h2 {
+    font-weight: normal;
+    color: #aaa;
+}
+
+
+/* TELA */
+
+.tela {
+    width: 600px;
+    height: 45px;
+
+    margin: 40px auto 60px;
+
+    background: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+
+/* SALA */
+
+.sala {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* FILEIRA */
+
+.fileira {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+/* CHECKBOX */
+
+.assento input {
+    display: none;
+}
+
+
+/* CADEIRA */
+
+.assento span {
+    width: 55px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #555;
+
+    border-radius: 8px 8px 5px 5px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* HOVER */
+
+.assento span:hover {
+    transform: scale(1.08);
+}
+
+
+/* SELECIONADO */
+
+.assento input:checked + span {
+    background: #00c853;
+}
+
+
+/* OCUPADO */
+
+.assento.ocupado span {
+    background: #e53935;
+
+    cursor: not-allowed;
+
+    opacity: 0.7;
+}
+
+.assento.ocupado span:hover {
+    transform: none;
+}
+
+
+/* LEGENDA */
+
+.legenda {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 50px;
+}
+
+.legenda div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.legenda p {
+    margin: 0;
+}
+
+.cor {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 4px;
+}
+
+
+/* CORES DA LEGENDA */
+
+.cor.disponivel {
+    background: #555;
+}
+
+.cor.selecionado {
+    background: #00c853;
+}
+
+.cor.ocupado {
+    background: #e53935;
+}
+
+
+/* RESUMO */
+
+.resumo {
+    margin-top: 40px;
+
+    padding: 20px;
+
+    border-top: 1px solid #333;
+}
+
+.resumo p {
+    font-size: 18px;
+}
+
+.resumo strong {
+    color: #00c853;
+}
+
+
+/* BOTÃO */
+
+#finalizar {
+    margin-top: 15px;
+
+    padding: 14px 35px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #e50914;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#finalizar:hover {
+    background: #b20710;
+
+    transform: scale(1.03);
+}
+
+.sala {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* CADA FILEIRA */
+
+.fileira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* CHECKBOX ESCONDIDO */
+
+.assento input {
+    display: none;
+}
+
+
+/* CADEIRA */
+
+.assento {
+    position: relative;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    
+}
+
+
+/* PARTE PRINCIPAL DA CADEIRA */
+
+.assento span {
+
+    position: relative;
+
+    width: 45px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #444;
+
+    color: white;
+
+    border-radius: 7px 7px 5px 5px;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+
