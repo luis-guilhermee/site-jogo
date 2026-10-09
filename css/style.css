@@ -1,383 +1,408 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 nav {
-    background-color: #7c1010;
+  background-color: #7c1010;
 }
 .logo {
-    margin-left: 20px;
-    height: 50px;
-    width: auto;
-    margin-right: 20px;
+  margin-left: 20px;
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
 }
 .menu {
-    width: 99vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background-color: #7c1010;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #7c1010;
 }
 .menu-list {
-    margin-right: 520px;
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    background-color: #7c1010;
-    font-size: 1.3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 15px;
+  margin-left: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  background-color: #7c1010;
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 1;
 }
 .menu-list a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .menu-list li span {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #7c1010;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #7c1010;
+  transition: background-color 0.5s ease;
 }
 .menu-list li span:hover {
-    background-color: #610101;
-    color: #fff;
-    transition: 1s;
+  background-color: #610101;
+  color: #fff;
+  transition: 1s;
+}
+.local {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.local select {
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #7c1010;
+  width: 125px;
+  height: 35px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.local select:hover {
+  background-color: #610101;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 .btn-nav {
-    border: none;
-    background-color: #7c1010;
+  border: none;
+  background-color: #7c1010;
 }
 .btn-nav:hover {
-    cursor: pointer;
-    background-color: #610101;
-    transition: 0.5sec;
+  cursor: pointer;
+  background-color: #610101;
+  transition: 0.5s;
 }
 .cont {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 65vh;
-    width: 99vw;
-    background-color: #1d1d1d;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 65vh;
+  width: 99vw;
+  background-color: #1d1d1d;
 }
 .carousel {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    height: 400px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
 }
 .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .carousel-inner {
-    display: flex;
-    align-items: center;
-    padding-left: 49px;
-    justify-content: start;
+  display: flex;
+  align-items: center;
+  padding-left: 49px;
+  justify-content: start;
 }
 .carousel-item.active {
-    padding: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+.carousel-item {
+    position: relative;
+    width: 100%;
 }
 .carousel-item img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
-.carousel-item {
-    position: relative;
-}
 .btn-btn-primary {
-    position: absolute;
-    left: 8%;
-    top: 78%;
-    transform: translateY(-50%);
-    height: 40px;
-    width: 120px;
-    font-size: 1rem;
-    background-color: #7c1010;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  position: absolute;
+  left: 8%;
+  top: 78%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 120px;
+  font-size: 1rem;
+  background-color: #7c1010;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.5s ease;
 }
 .btn-btn-primary:hover {
-    height: 50px;
-    width: 130px;
-    font-size: 1.1rem;
-    background-color: #610101;
-    font-weight: 600;
-    transition: 0.3s;
+  height: 50px;
+  width: 130px;
+  font-size: 1.1rem;
+  background-color: #610101;
+  font-weight: 600;
 }
 .venda {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    height: 65vh;
-    width: 99vw;
-    background-color: #1d1d1d;
-    color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 65vh;
+  width: 99vw;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .venda h1 {
-    margin-left: 10vw;
-    font-size: 2rem;
+  margin-left: 10vw;
+  font-size: 2rem;
 }
-.filmes, .promocao {
-    display: flex;
-    gap: 30px;
-    align-self: center;
-    align-items: start;
-    justify-content: space-between;
-    width: 1200px;
-    height: 30vw;
+.filmes,
+.promocao {
+  display: flex;
+  gap: 30px;
+  align-self: center;
+  align-items: start;
+  justify-content: space-between;
+  width: 1200px;
+  height: 30vw;
 }
 .cards-filmes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 10px;
-    height: 300px;
-    width: 170px;
-    background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  height: 300px;
+  width: 170px;
+  background-color: #2d2d2d;
 }
 .cards-filmes-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    margin-top: 12px;
-    width: 130px;
-    height: 180px;
+  margin-top: 12px;
+  width: 130px;
+  height: 180px;
 
-    border-radius: 10px;
-    overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
 
-    background-position: center;
-    background-size: 100% 100%;
+  background-position: center;
+  background-size: 100% 100%;
 
-    transition: background-size 0.5s ease;
+  transition: background-size 0.5s ease;
 }
-
 
 /* IMAGENS */
 
 .cards-filmes-img-1 {
-    background-image: url('../img/deadpool.png');
+  background-image: url("../img/deadpool.png");
 }
 
 .cards-filmes-img-2 {
-    background-image: url('../img/vertity.png');
+  background-image: url("../img/vertity.png");
 }
 
 .cards-filmes-img-3 {
-    background-image: url('../img/ultimato.png');
+  background-image: url("../img/ultimato.png");
 }
 
 .cards-filmes-img-4 {
-    background-image: url('../img/inception.png');
+  background-image: url("../img/inception.png");
 }
 
 .cards-filmes-img-5 {
-    background-image: url('../img/top_gun.png');
+  background-image: url("../img/top_gun.png");
 }
 
 .cards-filmes-img-6 {
-    background-image: url('../img/star-wars.png');
+  background-image: url("../img/star-wars.png");
 }
 
 .cards-filmes-img-7 {
-    background-image: url('../img/aranhaverso.png');
+  background-image: url("../img/aranhaverso.png");
 }
 
 .cards-filmes-img-8 {
-    background-image: url('../img/carros.png');
+  background-image: url("../img/carros.png");
 }
 
 .cards-filmes-img-9 {
-    background-image: url('../img/duro-matar.png');
+  background-image: url("../img/duro-matar.png");
 }
 
 .cards-filmes-img-10 {
-    background-image: url('../img/guerra.png');
+  background-image: url("../img/guerra.png");
 }
 .cards-filmes-img-11 {
-    background-image: url('../img/harry-potter.png');
+  background-image: url("../img/harry-potter.png");
 }
 .cards-filmes-img-12 {
-    background-image: url('../img/velozes.png');
+  background-image: url("../img/velozes.png");
 }
 .cards-filmes-img-13 {
-    background-image: url('../img/uncharted.png');
+  background-image: url("../img/uncharted.png");
 }
 .cards-filmes-img-14 {
-    background-image: url('../img/avengers.png');
+  background-image: url("../img/avengers.png");
 }
 .cards-filmes-img-15 {
-    background-image: url('../img/tasm.png');
+  background-image: url("../img/tasm.png");
 }
-
 
 /* CAMADA ESCURA */
 
 .cards-filmes-img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
 
-    background-color: #1d1d1daa;
+  background-color: #1d1d1daa;
 
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
-
 
 /* LINKS */
 
-.cards-filmes-img p{
-    position: relative;
-    z-index: 2;
+.cards-filmes-img p {
+  position: relative;
+  z-index: 2;
 
-    margin: 5px 0;
+  margin: 5px 0;
 
-    opacity: 0;
+  opacity: 0;
 
-    transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
-
 
 /* TEXTO DOS LINKS */
 
-.cards-filmes-img a{
-    text-decoration: none;
-    color: #fff;
+.cards-filmes-img a {
+  text-decoration: none;
+  color: #fff;
 
-    font-weight: 900;
-    font-size: 1rem;
+  font-weight: 900;
+  font-size: 1rem;
 }
-
 
 /* ZOOM */
 
 .cards-filmes-img:hover {
-    background-size: 110% 110%;
+  background-size: 110% 110%;
 }
-
 
 /* ESCURECER */
 
 .cards-filmes-img:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /* MOSTRAR LINKS */
 
 .cards-filmes-img:hover p {
-    opacity: 1;
+  opacity: 1;
 }
 .nome-filme {
-    padding-inline: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    display: flex;
-    height: 50px;
-    width: 150px;
-    align-items: start;
-    justify-content: flex-start;
-    gap: 20px;
-    font-size: 1rem;
+  padding-inline: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  height: 50px;
+  width: 150px;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 1rem;
 }
-.btn-filmes {   
-    align-self: flex-start;
-    background-color: #7c1010;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 30px;
-    width: 80px;
-    margin-left: 20px;
-    font-size: small;
+.btn-filmes {
+  align-self: flex-start;
+  background-color: #7c1010;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 80px;
+  margin-left: 20px;
+  font-size: small;
+  transition: all 0.5s ease
 }
-.btn-filmes a, .btn-btn-primary a {
-    text-decoration: none;
-    color: #fff;
+.btn-filmes a,
+.btn-btn-primary a {
+  text-decoration: none;
+  color: #fff;
 }
 .btn-filmes:hover {
-    background-color: #610101;
-    font-size: 1rem;
-    transition: 0.3s;
-    height: 37px;
-    width: 87px;
+  background-color: #610101;
+  font-size: 1rem;
+  height: 37px;
+  width: 87px;
 }
 .cards-promocao img {
-    height: 280px;
-    width: auto;
-    border-radius: 20px;
+  height: 280px;
+  width: auto;
+  border-radius: 20px;
 }
 .cards-promocao {
-    position: relative
+  position: relative;
 }
 .btn-promocao {
-    height: 35px;
-    width: 120px;
-    border-radius: 60px;
-    border: none;
-    background-color: #7c1010;
-    color: #fff;
-    font-size: 1rem;
+  height: 35px;
+  width: 120px;
+  border-radius: 60px;
+  border: none;
+  background-color: #7c1010;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.5s ease
 }
 .btn-promocao1 {
-    position: absolute;
-    top: 59%;
-    left: 2%;
+  position: absolute;
+  top: 59%;
+  left: 2%;
 }
-.btn-promocao2, .btn-promocao3 {
-    position: absolute;
-    top: 85%;
-    left: 2%;
+.btn-promocao2,
+.btn-promocao3 {
+  position: absolute;
+  top: 85%;
+  left: 2%;
 }
 .btn-promocao:hover {
-    cursor: pointer;
-    background-color: #610101;
-    font-weight: 900;
-    height: 40px;
-    width: 125px;
-    font-size: 1.1  rem;
-    transition: 0.5s;
+  cursor: pointer;
+  background-color: #610101;
+  height: 40px;
+  width: 125px;
+  font-size: 1.1 rem;
 }
-.cards-promocao p{
-    display: flex;
-    flex-wrap: wrap;
-    width: 150px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 1.5rem;
+.cards-promocao p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
 }
