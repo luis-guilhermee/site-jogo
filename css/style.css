@@ -127,13 +127,13 @@ nav {
   width: 90vw;
 }
 .carousel-item {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 .carousel-item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 .btn-btn-primary {
   position: absolute;
@@ -348,7 +348,7 @@ nav {
   width: 80px;
   margin-left: 20px;
   font-size: small;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 .btn-filmes a,
 .btn-btn-primary a {
@@ -377,7 +377,7 @@ nav {
   background-color: #7c1010;
   color: #fff;
   font-size: 1rem;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 .btn-promocao1 {
   position: absolute;

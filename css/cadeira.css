@@ -1,364 +1,340 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .corpo {
-    height: 145dvh;
-    padding-top: 1px;
-    background-color: #1d1d1d;
+  height: 145dvh;
+  padding-top: 1px;
+  background-color: #1d1d1d;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 nav {
-    background-color: #7c1010;
-    position: relative;
+  background-color: #7c1010;
+  position: relative;
 }
 .menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    background-color: #7c1010;
-    position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #7c1010;
+  position: relative;
 }
 
 .logo {
-    position: absolute;
-    top: 14%;
-    left: 20px;
-    height: 50px;
-    width: auto;
+  position: absolute;
+  top: 14%;
+  left: 20px;
+  height: 50px;
+  width: auto;
 }
 
 .menu-list {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    background-color: #7c1010;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  background-color: #7c1010;
 }
 .menu-list a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
 }
 .menu-list li span {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #7c1010;
-    transition: all 0.5s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #7c1010;
+  transition: all 0.5s ease;
 }
 .menu-list li span:hover {
-    background-color: #610101;
-    color: #fff;
+  background-color: #610101;
+  color: #fff;
 }
 .btn-nav {
-    border: none;
-    background-color: #7c1010;
-    transition: all 0.5s ease;
+  border: none;
+  background-color: #7c1010;
+  transition: all 0.5s ease;
 }
 .btn-nav:hover {
-    cursor: pointer;
-    background-color: #610101;
+  cursor: pointer;
+  background-color: #610101;
 }
 .selecao-assentos {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
 
-    text-align: center;
+  text-align: center;
 
-    color: white;
+  color: white;
 }
 
 .selecao-assentos h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .selecao-assentos h2 {
-    font-weight: normal;
-    color: #aaa;
+  font-weight: normal;
+  color: #aaa;
 }
-
 
 /* TELA */
 
 .tela {
-    width: 850px;
-    height: 45px;
+  width: 850px;
+  height: 45px;
 
-    margin: 40px auto 60px;
+  margin: 40px auto 60px;
 
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
-
 
 /* SALA */
 
 .sala {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 15px;
+  gap: 15px;
 }
-
 
 /* FILEIRA */
 
 .fileira {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    gap: 12px;
+  gap: 12px;
 }
-
 
 /* CHECKBOX */
 
 .assento input {
-    display: none;
+  display: none;
 }
-
 
 /* CADEIRA */
 
 .assento span {
-    width: 55px;
-    height: 45px;
+  width: 55px;
+  height: 45px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: #555;
+  background: #555;
 
-    border-radius: 8px 8px 5px 5px;
+  border-radius: 8px 8px 5px 5px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.2s;
+  transition: 0.2s;
 }
-
 
 /* HOVER */
 
 .assento span:hover {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
-
 
 /* SELECIONADO */
 
 .assento input:checked + span {
-    background: #00c853;
+  background: #00c853;
 }
-
 
 /* OCUPADO */
 
 .assento.ocupado span {
-    background: #e53935;
+  background: #e53935;
 
-    cursor: not-allowed;
+  cursor: not-allowed;
 
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .assento.ocupado span:hover {
-    transform: none;
+  transform: none;
 }
-
 
 /* LEGENDA */
 
 .legenda {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 35px;
+  gap: 35px;
 
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .legenda div {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 8px;
+  gap: 8px;
 }
 
 .legenda p {
-    margin: 0;
+  margin: 0;
 }
 
 .cor {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 
-    border-radius: 4px;
+  border-radius: 4px;
 }
-
 
 /* CORES DA LEGENDA */
 
 .cor.disponivel {
-    background: #555;
+  background: #555;
 }
 
 .cor.selecionado {
-    background: #00c853;
+  background: #00c853;
 }
 
 .cor.ocupado {
-    background: #e53935;
+  background: #e53935;
 }
-
 
 /* RESUMO */
 
 .resumo {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    padding: 20px;
+  padding: 20px;
 
-    border-top: 1px solid #333;
+  border-top: 1px solid #333;
 }
 
 .resumo p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .resumo strong {
-    color: #00c853;
+  color: #00c853;
 }
-
 
 /* BOTÃO */
 
 #finalizar {
-    margin-top: 15px;
+  margin-top: 15px;
 
-    padding: 14px 35px;
+  padding: 14px 35px;
 
-    border: none;
-    border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 
-    background: #e50914;
+  background: #e50914;
 
-    color: white;
+  color: white;
 
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 #finalizar:hover {
-    background: #b20710;
+  background: #b20710;
 
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .sala {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-
 
 /* CADA FILEIRA */
 
 .fileira {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    gap: 14px;
+  gap: 14px;
 }
-
 
 /* CHECKBOX ESCONDIDO */
 
 .assento input {
-    display: none;
+  display: none;
 }
-
 
 /* CADEIRA */
 
 .assento {
-    position: relative;
+  position: relative;
 
-    width: 55px;
-    height: 55px;
+  width: 55px;
+  height: 55px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    cursor: pointer;
-
-    
+  cursor: pointer;
 }
-
 
 /* PARTE PRINCIPAL DA CADEIRA */
 
 .assento span {
+  position: relative;
 
-    position: relative;
+  width: 45px;
+  height: 35px;
 
-    width: 45px;
-    height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #444;
 
-    background: #444;
+  color: white;
 
-    color: white;
+  border-radius: 7px 7px 5px 5px;
 
-    border-radius: 7px 7px 5px 5px;
+  font-size: 12px;
 
-    font-size: 12px;
-
-    transition: 0.2s;
+  transition: 0.2s;
 }
-
-
 
 .fileira {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
-
 
 .assento.fim-bloco {
-    margin-right: 45px;
+  margin-right: 45px;
 }
-
-
