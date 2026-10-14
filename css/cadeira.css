@@ -5,7 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .corpo {
-    height: 120dvh;
+    height: 145dvh;
     padding-top: 1px;
     background-color: #1d1d1d;
 }
@@ -92,7 +92,7 @@ nav {
 /* TELA */
 
 .tela {
-    width: 600px;
+    width: 850px;
     height: 45px;
 
     margin: 40px auto 60px;
@@ -345,6 +345,20 @@ nav {
     font-size: 12px;
 
     transition: 0.2s;
+}
+
+
+
+.fileira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.assento.fim-bloco {
+    margin-right: 45px;
 }
 
 
